@@ -14,10 +14,10 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GAYHUB_TOKEN }}
+          GITHUB_TOKEN: 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
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
+          tag_name: v1.0
+          release_name: Test
           draft: true
           prerelease: true
   linuxamd64build:
